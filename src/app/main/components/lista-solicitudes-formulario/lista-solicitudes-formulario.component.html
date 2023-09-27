@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="card">
+        <div style="background: #002E59; color: white;" class="card-header">
+            <h2 class="text-center">Responder Solicitud</h2>
+        </div>
+        <div style="background: #D9EDFF;" class="card-body">
+            <form (submit)="handleSubmit($event)" action="/">
+                <div class="row d-flex">
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                        <label class="ms-3" style="padding: 5px;" for="">Fecha Recibido:</label>
+                        <br>
+                        <input class="ms-3" style="font-weight: bold; border:none; color: #003B73; padding: 5px; width: 90%;" type="date" required>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Fecha de Oficio:</label>
+                        <br>
+                        <input class="ms-3" style="font-weight: bold; border:none; color: #003B73; padding: 5px; width: 90%;" type="date" required>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Organización Remitente</label>
+                        <br>
+                        <input class="ms-3"
+                            style="background: #B0D9FF; border: none; color: #004F99; padding: 5px; width: 90%;"
+                            type="text" required>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Persona que Firma</label>
+                        <br>
+                        <input class="ms-3" readonly value="Presidente"
+                            style="background: #B0D9FF; border: none; color: #004F99; padding: 5px; width: 90%;"
+                            type="text" required>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Documentos Firmados</label>
+                        <br>
+                        <input class="ms-3"
+                            style="background: #B0D9FF; border: none; color: #004F99; padding: 5px; width: 90%; border: 1px black solid;"
+                            type="file" multiple required>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                        <label class="ms-3" style="padding: 5px;" for="">Requerimiento</label>
+                        <br>
+                        <input class="ms-3"
+                            style="background: #B0D9FF; border: none; color: #004F99; padding: 5px; width: 90%;"
+                            type="text" required>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Delegación</label>
+                        <br>
+                        <select class="ms-3"
+                            style="background: #B0D9FF; border: none; color: #004F99; padding: 5px; width: 90%;"
+                            name="Seleccionar">
+                            <option value="0">Departamento Juridico</option>
+                            <option value="1">Secretaría</option>
+                            <option value="2">Proyectos</option>
+                        </select>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Prioridad</label>
+                        <br>
+                        <select class="ms-3"
+                            style="background: #B0D9FF; border: none; color: #004F99; padding: 5px; width: 90%;"
+                            name="Seleccionar">
+                            <option value="0">Alta</option>
+                            <option value="1">Media</option>
+                            <option value="2">Baja</option>
+                        </select>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Comentario</label>
+                        <br>
+                        <textarea
+                            style="overflow: hidden; padding: 5px; width: 90%; background: #B0D9FF; border: none; color: #004F99; resize: none; "
+                            class="ms-3"></textarea>
+                        <br>
+                        <label class="ms-3" style="padding: 5px;" for="">Fecha de Emisión Documento</label>
+                        <br>
+                        <input class="ms-3" style="border:none; color: #003B73; padding: 5px; width: 90%;" type="text"
+                            value="Hace 5 dias" readonly>
+                    </div>                                                            
+                    <div class="container mt-3 text-center">
+                        <input style="width: 90px; height: 40px; position: relative; right: 4.5%;" type="submit" value="Crear"
+                            class="btn btn-success" required>                   
+                        <input style="width: 90px; height: 40px; position: relative; left: 30px;" type="button" value="Cancelar"
+                        class="btn btn-danger" (click)="cancelar()" required>                                                
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

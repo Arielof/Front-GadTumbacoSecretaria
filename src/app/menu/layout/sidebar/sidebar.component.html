@@ -1,0 +1,14 @@
+<div [ngClass]="{'sidebar': true, 'collapsed': isCollapsed}">
+    <!--<button style="margin-top: 10px;" class="btn btn-outline-light" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>-->
+    <ul class="list-group">
+      <li class="text-center" style=" background: #002E59; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+        <h5>Presidencia</h5>
+      </li>
+      <a href="/listasolicitudes"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+          Lista de Solicitudes</button></a>
+      <a href="/solicitudesrevisadas"><button style="height: 10vh;" class="list-group-item"><i
+            class="fa-solid fa-file-pen"></i> Solicitudes Revisadas</button></a>
+      <a href="listausuarios"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+          Lista Usuarios</button></a>
+    </ul>
+  </div>
