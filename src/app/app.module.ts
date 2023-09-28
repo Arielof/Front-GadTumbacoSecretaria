@@ -9,10 +9,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent        
+       
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     ComponentsModule,
     LayoutModule

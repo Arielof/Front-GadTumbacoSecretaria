@@ -2,24 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListaSolicitudesComponent } from './lista-solicitudes/lista-solicitudes.component';
 import { ListaSolicitudesFormularioComponent } from './lista-solicitudes-formulario/lista-solicitudes-formulario.component';
-import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 import { SolicitudesRevisadasComponent } from './solicitudes-revisadas/solicitudes-revisadas.component';
+import { PrimengModule } from 'src/app/primeng/prime.module';
+import { UsuarioComponent } from './lista-usuarios/lista-usuarios.component';
 
 @NgModule({
   declarations: [
     ListaSolicitudesComponent,
     ListaSolicitudesFormularioComponent,
-    ListaUsuariosComponent,
+    UsuarioComponent,
     SolicitudesRevisadasComponent    
   ],  
   exports:[
     ListaSolicitudesComponent,
     ListaSolicitudesFormularioComponent,
-    ListaUsuariosComponent,
+    UsuarioComponent,
     SolicitudesRevisadasComponent
   ],
   imports: [
-    CommonModule    
+    CommonModule,
+    PrimengModule  
   ]
 })
 export class ComponentsModule { }
