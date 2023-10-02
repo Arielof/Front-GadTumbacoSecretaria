@@ -113,13 +113,17 @@
   }
   
   tr {
-    background: white;
+    background: blue;
   }
   
   tr:hover {
     background: rgba(24, 77, 158, 0.466);
     color: #0f0f0f;
   }
+ 
+  
+  /* Estilos para las celdas de la tabla (puedes personalizarlos según tus necesidades) */
+  
   
   /* Estilos para el cuerpo del formulario */
   .user-details {

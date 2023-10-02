@@ -21,12 +21,12 @@ export class UsuarioService {
   }
 
   getUsuarioid(id: number): Observable<any> {
-    return this.http.get(`${this.apiUrl}/usuarios/${id}`);
+    return this.http.get(`${this.apiUrl}/listarusuario/${id}`);
   }
 
 
   crearUsuario(usuario: UsuarioModel): Observable<any>{
-    return this.http.post(`${this.apiUrl}/crearusuario`, usuario);
+    return this.http.post(`${this.apiUrl}/crearusuario/`, usuario);
   }
 
 

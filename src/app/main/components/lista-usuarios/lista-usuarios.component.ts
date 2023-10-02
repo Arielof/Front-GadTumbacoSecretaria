@@ -49,6 +49,8 @@ export class UsuarioComponent implements OnInit {
     }
     
     agregarUsuario() {
+
+      
       let usuario: UsuarioModel = this.UsuarioForm.value
       this.usuarioService.crearUsuario(usuario).subscribe(data => {
         this.getUser();
